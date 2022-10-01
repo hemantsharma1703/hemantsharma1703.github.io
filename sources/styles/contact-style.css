@@ -1,0 +1,44 @@
+.contact-boxes {
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    width: 10vw;
+}
+
+.section-1-content {
+    margin: 15vh 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tooltip {
+    justify-content: center;
+    visibility: hidden;
+}
+
+.contact-boxes:hover .tooltip {
+    visibility: visible;
+}
+
+.tab-name {
+    display: block;
+}
+
+@media screen and (max-width: 912px) {
+    .section-1-content {
+        flex-direction: column;
+        margin: 5vh 0 10vh 0;
+    }
+    .links {
+        width: 50vw;
+    }
+    .contact-boxes {
+        width: 50vw;
+    }
+    .tooltip {
+        visibility: visible;
+    }
+}
