@@ -40,7 +40,6 @@ body {
     font-size: xx-large;
 }
 
-
 .navbar {
     justify-content: space-between;
 }
@@ -135,5 +134,11 @@ body {
     }
     .tab-name {
         display: block;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio-logo {
+        font-size: x-large;
     }
 }
