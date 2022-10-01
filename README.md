@@ -4,7 +4,7 @@ This is my personal portfolio website.
 # URL🔗
 - https://hemantsharma1703.github.io/
 
-# Technology Used👨‍💻
+# Technologies Used👨‍💻
 - HTML
 - CSS
 - JavaScript
