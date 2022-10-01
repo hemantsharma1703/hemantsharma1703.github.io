@@ -1,10 +1,10 @@
-#My Portfolio Website🌐
+# My Portfolio Website🌐
 This is my personal portfolio website.
 
-#URL
+# URL
 - https://hemantsharma1703.github.io/
 
-#Technology Used
+# Technology Used
 - HTML
 - CSS
 - JavaScript
