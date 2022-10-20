@@ -44,6 +44,10 @@
     box-shadow: 0px 0px 40px white;
 }
 
+.section-1-content {
+    margin: 15vh 0 0 0;
+}
+
 @media screen and (max-width: 912px) {
     .section-1-content {
         flex-direction: column;
