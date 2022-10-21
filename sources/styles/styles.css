@@ -17,6 +17,12 @@ body {
     margin: auto;
 }
 
+#home {
+    background: linear-gradient(322deg, rgba(100,100,255,1) 0%, rgba(100,100,255,1) 35%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .section-1 {
     margin-top: 10vh;
 }
