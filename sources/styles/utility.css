@@ -153,6 +153,6 @@ body {
 
 @media screen and (max-width: 375px) {
     .portfolio-logo {
-        font-size: x-large;
+        font-size: large;
     }
 }
