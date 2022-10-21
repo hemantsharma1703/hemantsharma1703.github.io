@@ -101,7 +101,11 @@ body {
     color: transparent;
 }
 
-.menu-button {
+#menubtn {
+    display: none;
+}
+
+#closebtn {
     display: none;
 }
 
@@ -109,9 +113,13 @@ body {
     .section-1 {
         margin-top: 5vh;
     }
-    .menu-button {
+    #menubtn {
         display: block;
-        width: 10%;
+    }
+    #closebtn {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
     }
     #menu {
         display: none;
@@ -122,20 +130,24 @@ body {
         left: 0;
         right: 0;
         z-index: 1;
-        background-image: url(../img/bg.jpeg);
-        transform: translate(0, 100px);
+        background-color: black;
+        color: white;
         text-align: center;
-        margin: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-        width: 70%;
-        height: 150px;
-        border: 0px solid;
-        border-radius: 20px;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        
+        
         box-shadow: 10px 10px 100px black;
+    }
+    .navbar-link {
+        font-size: xxx-large;
     }
     .tab-name {
         display: block;
+    }
+    .portfolio-logo {
+        font-size: x-large;
     }
 }
 
