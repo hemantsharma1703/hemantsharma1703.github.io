@@ -8,6 +8,12 @@
     width: 10vw;
 }
 
+#contact-connect {
+    background: linear-gradient(322deg, rgba(100,100,255,1) 0%, rgba(100,100,255,1) 35%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .section-1-content {
     margin: 15vh 0;
     justify-content: space-around;
@@ -48,10 +54,59 @@
     margin: 15vh 0 0 0;
 }
 
+.contact-links {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-links p {
+    margin-left: 10px;
+}
+
+.linkedin div, 
+.twitter div,
+.github div {
+    padding: 0 20px;
+}
+
+.linkedin {
+    background-color: rgb(0, 119, 191, 0.5);
+    border: 2px solid rgb(0, 119, 191);
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.twitter {
+    background-color: rgb(29, 161, 242, 0.5);
+    border: 2px solid rgb(29, 161, 242);
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.twitter:hover {
+    background-color: rgb(29, 161, 242);
+}
+
+.github {
+    background-color: rgb(23, 21, 21, 0.5);
+    border: 2px solid rgb(23, 21, 21);
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.github:hover {
+    background-color: rgb(23, 21, 21);
+}
+
 @media screen and (max-width: 912px) {
     .section-1-content {
         flex-direction: column;
-        margin: 5vh 0 10vh 0;
+        margin: 5vh 0 0 0;
+        height: 40vh;
     }
     .links {
         width: 50vw;
@@ -61,5 +116,9 @@
     }
     .tooltip {
         visibility: visible;
+    }    
+    .resume {
+        margin: 0;
+        height: 30vh;
     }
 }
