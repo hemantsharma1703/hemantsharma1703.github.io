@@ -141,7 +141,7 @@ body {
         box-shadow: 10px 10px 100px black;
     }
     .navbar-link {
-        font-size: xxx-large;
+        font-size: -webkit-xxx-large;
     }
     .tab-name {
         display: block;
