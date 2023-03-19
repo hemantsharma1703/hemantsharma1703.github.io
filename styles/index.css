@@ -1,0 +1,7 @@
+@import url(./variables.css);
+
+@media screen and (max-width: 491px) {
+    ul {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+    margin: 0;
+    color: white;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: url(../img/bg.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.tab-name {
+    display: none;
+    background: linear-gradient(0deg, rgba(100,100,255,1) 0%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 5vh 0 0 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.section-1 {
+    margin-top: 10vh;
+}
+
+.portfolio-logo {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar-links {
+    list-style-type: none;
+}
+
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar-links {
+    list-style-type: none;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 2vw;
+    font-size: large;
+    transition: color 0.25s ease-in-out;
+}
+
+.navbar-link:hover {
+    background: linear-gradient(322deg, rgba(100,100,255,1) 0%, rgba(100,100,255,1) 35%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.flex-justify-content-center {
+    justify-content: center;
+}
+
+.flex-align-items-center {
+    align-items: center;
+}
+
+.bg-vid {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.HEMANT {
+    background: linear-gradient(180deg, rgba(255,100,246,1) 0%, rgba(4,0,255,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#menubtn {
+    display: none;
+}
+
+#closebtn {
+    display: none;
+}
+
+@media screen and (max-width: 912px) {
+    .section-1 {
+        margin-top: 5vh;
+    }
+    #menubtn {
+        display: block;
+    }
+    #closebtn {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #menu {
+        display: none;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        
+        
+        box-shadow: 10px 10px 100px black;
+    }
+    .navbar-link {
+        font-size: -webkit-xxx-large;
+    }
+    .tab-name {
+        display: block;
+    }
+    .portfolio-logo {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio-logo {
+        font-size: large;
+    }
+}

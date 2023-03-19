@@ -1,49 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="./sources/img/1.png">
-    <title>Hemant Sharma</title>
-    <link rel="stylesheet" href="sources/styles/styles.css">
-    <link rel="stylesheet" href="sources/styles/utility.css">
-    <link rel="icon" href="sources/img/favicon.ico">
-    <script src="/sources/scripts/utility.js"></script>
+    <title>Hemant Sharma - Frontend Developer | UI/UX</title>
+    <link rel="stylesheet" href="./styles/utility.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./assets/logo.png">
 </head>
+
 <body>
-    <div class="container">
-        <section class="section-1">
-            <nav class="navbar d-flex">
-                <a href="index.html" class="portfolio-logo d-flex flex-align-items-center"><strong class="HEMANT">HEMANT</strong>&nbsp;<span>SHARMA</span></a>
-                <img id="menubtn" onclick="toggleMenu()" src="sources/img/menu-60.svg" alt="menu">
-                
-                <ul id="menu" class="navbar-links d-flex">
-                    
-                    <!-- <a href="index.html" class="portfolio-logo d-flex flex-align-items-center"><strong class="HEMANT">HEMANT</strong>&nbsp;<span>SHARMA</span></a>
-                    <img id="menubtn" onclick="toggleMenu()" src="sources/img/menu-60.svg" alt="menu" class="menu-button"> -->
-                    <a href="./index.html" class="navbar-link"><li id="home">HOME</li></a>
-                    <a href="./sources/pages/about.html" class="navbar-link"><li>ABOUT</li></a>
-                    <!-- <a href="./sources/pages/services.html" class="navbar-link"><li>SERVICES</li></a> -->
-                    <!-- <a href="./sources/pages/portfolio.html" class="navbar-link"><li>PORTFOLIO</li></a> -->
-                    <a href="./sources/pages/contact.html" class="navbar-link"><li>CONTACT & CONNECT</li></a>
-                    <img id="closebtn" onclick="toggleMenu()" src="sources/img/closebutton.svg" alt="close">
-                </ul>
-            </nav>
-            <div class="section-1-content d-flex">
-                <div class="section-1-text">
-                    <div class="hello-world">Hello World!</div>
-                    <p class="name">Myself, <strong class="HEMANT">Hemant</strong> 👋</p>
-                    <div class="qualities">
-                        <p class="self-text programmer">Programmer <p>👨‍💻</p> </p>
-                        <p class="self-text front-end">Frontend Developer <p>🖥</p> </p>
-                    </div>                    
-                </div>
-                <div class="hemant-img">
-                    <img src="sources/img/hemant.png" alt="Hemant Sharma's Image" class="hemant-image">
-                </div>
-            </div>
-        </section>
+    <div id="hamburger-holder" onclick="toggleOpen()">
+        <div class="hamburger">
+            <span class="bar-1"></span>
+            <span class="bar-2"></span>
+        </div>
     </div>
+    <nav id="navmenu" style="display: none;">
+        <ul>
+            <li style="opacity: 0.65"><a href="./index.html">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/skills.html">Skills</a></li>
+            <li><a href="./pages/projects.html">Projects</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">        
+        <h1>Hemant Sharma</h1>
+        <ul>
+            <li>Programmer</li>
+            <li>Frontend Developer</li>
+            <li>UI/UX</li>
+        </ul>
+    </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>
