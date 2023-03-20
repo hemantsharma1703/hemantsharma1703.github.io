@@ -2,7 +2,7 @@
 This is my personal portfolio website.
 
 # URL🔗
-- https://hemants1703.github.io/
+- https://hemantsharma.dev/
 
 # Technologies Used👨‍💻
 - HTML
