@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    user-select: none;
     font-family: 'Space Grotesk', sans-serif !important;
     min-width: inherit;
     min-height: inherit;
