@@ -8,26 +8,71 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+::selection {
+  background: #43B9B9;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #000000;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(5, 5, 5);
+  color: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+code {
+  background-color: rgb(42, 42, 42);
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+}
+
+#heroShadowAnimation {
+  animation: heroShadow 1.5s infinite alternate linear;
+}
+
+@keyframes heroShadow {
+  0% {
+    box-shadow: 0 0 10px #2997ff;
+  }
+
+  50% {
+    box-shadow: 0 0 20px #43B9B9;
+  }
+
+  100% {
+    box-shadow: 0 0 30px #2997ff;
   }
 }
