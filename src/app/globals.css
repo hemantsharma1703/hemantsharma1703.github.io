@@ -76,3 +76,161 @@ code {
     box-shadow: 0 0 30px #2997ff;
   }
 }
+
+pre>code {
+  background-color: transparent !important;
+  padding: 0;
+  border-radius: 0;
+}
+
+.hljs {
+  color: #ffffff;
+  /* Light text color */
+  border-radius: 5px;
+}
+
+/* Base styles for code blocks */
+/* pre {
+  background-color: #282c34;
+  padding: 1.25em;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Inline code */
+/* code {
+  background-color: #2e3440;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  color: #e5e9f0;
+  font-family: 'Fira Code', 'Consolas', monospace;
+}  */
+
+/* Syntax highlighting styles */
+.hljs {
+  color: #abb2bf;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #7f848e;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #c678dd;
+}
+
+.hljs-literal,
+.hljs-number,
+.hljs-regexp,
+.hljs-string {
+  color: #98c379;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #61afef;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-function .hljs-keyword {
+  color: #c678dd;
+}
+
+.hljs-function .hljs-title {
+  color: #61afef;
+}
+
+.hljs-attr {
+  color: #d19a66;
+}
+
+.hljs-variable {
+  color: #e06c75;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #56b6c2;
+}
+
+.hljs-params {
+  color: #abb2bf;
+}
+
+.hljs-class .hljs-title {
+  color: #e5c07b;
+}
+
+.hljs-meta,
+.hljs-meta-string {
+  color: #e06c75;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #61afef;
+}
+
+.hljs-link {
+  color: #56b6c2;
+  text-decoration: underline;
+}
+
+.hljs-deletion {
+  background-color: rgba(224, 108, 117, 0.15);
+  color: #e06c75;
+}
+
+.hljs-addition {
+  background-color: rgba(152, 195, 121, 0.15);
+  color: #98c379;
+}
+
+/* Additional customizations for improved readability */
+.hljs-operator {
+  color: #56b6c2;
+}
+
+.hljs-punctuation {
+  color: #abb2bf;
+}
+
+.hljs-property {
+  color: #e06c75;
+}
+
+.hljs-tag {
+  color: #e06c75;
+}
+
+.hljs-name {
+  color: #e06c75;
+}
+
+.hljs-attr {
+  color: #d19a66;
+}
+
+.hljs-string {
+  color: #98c379;
+}
+
+/* Line number styles (if you decide to add line numbers) */
+.hljs-line-numbers {
+  color: #5c6370;
+  -webkit-user-select: none;
+  user-select: none;
+}
