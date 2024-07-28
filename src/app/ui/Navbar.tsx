@@ -8,16 +8,16 @@ export default function Navbar() {
   const pathname = usePathname();
   const navLinks = [
     {
-      name: "Home",
-      url: "/",
-    },
-    {
       name: "Work",
       url: "/work",
     },
     {
       name: "Blog",
       url: "/blog",
+    },
+    {
+      name: "Home",
+      url: "/",
     },
     {
       name: "Projects",

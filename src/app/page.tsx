@@ -19,10 +19,10 @@ export default function Home() {
           <article className="mt-10 text-slate-300 lg:mx-40 xl:mx-24">
             <p className="text-2xl max-sm:text-lg text-center">
               I&apos;m an experienced Software Engineer and a Full Stack
-              Developer who is based in India 🇮🇳 and I am passionate about
-              building applications and solving real-world problems, I have
-              experience in building web apps using technologies like Next.js,
-              Node.js, SvelteKit, TypeScript, and Adonis.js.
+              Developer who is based in 🇮🇳 Bharat (India) and I am passionate
+              about building applications and solving real-world problems, I
+              have experience in building web apps using technologies like
+              Next.js, Node.js, SvelteKit, TypeScript, and Adonis.js.
             </p>
           </article>
         </div>
