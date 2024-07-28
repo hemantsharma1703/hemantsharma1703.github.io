@@ -1,0 +1,82 @@
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      
+            <url>
+              <loc>https://hemantsharma.tech/errorx</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/layoutx</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/pagex</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/blog/pagex</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/connect/pagex</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/lib/meta_tag_keywords</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/projects/pagex</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/ui/BlogItemx</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/ui/ConnectItemx</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/ui/Navbarx</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/ui/ProjectItemx</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/ui/WorkDescriptionx</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/work/pagex</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/blog/[slug]/errorx</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/blog/[slug]/pagex</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/lib/blogs/posts</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/lib/connect/connects</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/lib/projects/projects</loc>
+            </url>
+          
+            <url>
+              <loc>https://hemantsharma.tech/lib/work/workHistory</loc>
+            </url>
+          
+    </urlset>
+  
