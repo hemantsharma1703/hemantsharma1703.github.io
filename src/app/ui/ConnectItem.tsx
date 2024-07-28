@@ -24,10 +24,8 @@ export default function ConnectItem({
       <div className="w-full flex justify-between items-center text-center">
         <Image src={connect.icon} height={50} width={50} alt={connect.handle} />
         <div className="flex flex-col">
-          <span className="font-semibold text-neutral-100">
-            {connect.social}
-          </span>
-          <span className="text-neutral-500">{connect.handle}</span>
+          <p className="font-semibold text-neutral-100">{connect.social}</p>
+          <p className="text-neutral-500">{connect.handle}</p>
         </div>
         <Image
           src={connect.profile_pic}

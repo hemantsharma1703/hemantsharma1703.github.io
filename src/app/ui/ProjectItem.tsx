@@ -33,12 +33,12 @@ export default function ProjectItem({
         <p className="text-clip text-neutral-400">{project.description}</p>
         <div className="flex flex-wrap gap-2 items-center">
           {project.technologies.map((technology, index) => (
-            <span
+            <p
               key={index}
               className="inline-flex justify-center items-center text-base bg-neutral-700 text-neutral-300 w-fit rounded-full pt-1 px-2"
             >
               {technology}
-            </span>
+            </p>
           ))}
         </div>
       </div>

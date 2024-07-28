@@ -1,13 +1,12 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { unified } from "unified";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
+import { remark } from "remark";
+import html from "remark-html";
+import { rehype } from "rehype";
 import rehypeStringify from "rehype-stringify";
-import rehypeFormat from "rehype-format";
-import rehypeRaw from "rehype-raw";
-import { visit } from "unist-util-visit";
+import rehypeClassNames from "rehype-class-names";
+import { title } from "process";
 
 const postsDirectory = path.join(process.cwd(), "/src/app/lib/blogs/");
 
@@ -36,42 +35,28 @@ export function getSortedPostsData() {
   });
 }
 
-function rehypeTailwindClasses() {
-  return (tree: any) => {
-    visit(tree, "element", (node) => {
-      const tailwindClasses: { [key: string]: string } = {
-        h1: "text-4xl font-bold my-4",
-        h2: "text-3xl font-semibold my-3",
-        p: "my-2",
-        code: "bg-neutral-700 rounded",
-        pre: "bg-neutral-900 rounded-xl p-4 my-4",
-        a: "text-[#2997ff] hover:text-[#43B9B9] active:opacity-50 underline visited:text-purple-500 hover:visited:text-purple-700",
-      };
-      const className = tailwindClasses[node.tagName];
-      if (className) {
-        node.properties.className = (node.properties.className || []).concat(
-          className
-        );
-      }
-    });
-  };
-}
-
 export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
 
+  console.log("Matter Result", matterResult);
+
   if (matterResult) {
-    const processedContent = await unified()
-      .use(remarkParse)
-      .use(remarkRehype, { allowDangerousHtml: true })
-      .use(rehypeRaw)
-      .use(rehypeTailwindClasses)
-      .use(rehypeFormat)
+    const processedContent = await remark()
+      .use(html)
+      .use(rehype)
+      .use(rehypeClassNames, {
+        h1: "text-4xl font-bold my-4",
+        h2: "text-3xl font-semibold my-3",
+        p: "my-2",
+        code: "bg-gray-100 rounded p-1",
+        pre: "bg-gray-100 rounded p-4 my-4",
+      })
       .use(rehypeStringify)
       .process(matterResult.content);
 
+    // post.content = processedContent.toString();
     return {
       id,
       title: matterResult.data.title,
@@ -81,5 +66,18 @@ export async function getPostData(id: string) {
     };
   }
 
-  throw new Error(`Post with id ${id} not found`);
+  // const fullPath = path.join(postsDirectory, `${id}.md`);
+  // const fileContents = fs.readFileSync(fullPath, "utf8");
+  // const matterResult = matter(fileContents);
+
+  // const processedContent = await remark()
+  //   .use(html)
+  //   .process(matterResult.content);
+  // const contentHtml = processedContent.toString();
+
+  // return {
+  //   id,
+  //   contentHtml,
+  //   ...matterResult.data,
+  // };
 }

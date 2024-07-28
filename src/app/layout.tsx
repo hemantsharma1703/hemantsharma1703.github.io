@@ -1,9 +1,8 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Overpass } from "next/font/google";
-import "./globals.css";
-
-// Importing UI Components
 import Navbar from "@/app/ui/Navbar";
+import keywords from "./lib/meta_tag_keywords";
 
 const overpass = Overpass({ subsets: ["latin"] });
 
@@ -17,8 +16,30 @@ export const metadata: Metadata = {
   authors: [{ name: "Hemant Sharma" }],
   description:
     "Hemant Sharma is a Software Engineer & Full Stack Developer based in India. He is passionate about building applications and solving real-world problems.",
-  // viewport:
-  //   "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+  keywords: keywords,
+  openGraph: {
+    title: {
+      template:
+        "%s - Hemant Sharma - Experienced Software Engineer & Full Stack Developer",
+      default:
+        "Hemant Sharma - Experienced Software Engineer & Full Stack Developer",
+    },
+    description:
+      "Hemant Sharma is a Software Engineer & Full Stack Developer based in India. He is passionate about building applications and solving real-world problems.",
+    images: ["/portfolio_og_image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: {
+      template:
+        "%s - Hemant Sharma - Experienced Software Engineer & Full Stack Developer",
+      default:
+        "Hemant Sharma - Experienced Software Engineer & Full Stack Developer",
+    },
+    description:
+      "Hemant Sharma is a Software Engineer & Full Stack Developer based in India. He is passionate about building applications and solving real-world problems.",
+    images: ["/portfolio_og_image.png"],
+  },
 };
 
 export default function RootLayout({

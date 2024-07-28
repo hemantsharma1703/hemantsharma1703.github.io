@@ -4,7 +4,7 @@ import { getSortedPostsData } from "@/app/lib/blogs/posts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blogs - Hemant Sharma - Software Engineer & Full Stack Developer",
+  title: "Blogs",
   description:
     "Blogs by Hemant Sharma, a Software Engineer & Full Stack Developer. Hemant writes about software development, web development, and other tech-related topics.",
   authors: [{ name: "Hemant Sharma" }],

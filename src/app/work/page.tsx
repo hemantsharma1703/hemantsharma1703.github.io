@@ -19,11 +19,11 @@ export default function About() {
         applications that the people can use and feel.
       </p>
       <div className="flex flex-col gap-4">
-        {workHistory.map((work) => (
+        {workHistory.map((work, index) => (
           <>
             <hr />
             <WorkDescription
-              key={work.companyName}
+              key={index}
               companyName={work.companyName}
               position={work.position}
               storyBehind={work.storyBehind}

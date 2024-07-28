@@ -21,10 +21,10 @@ export default function BlogItem({
     >
       <div className="w-full flex flex-col justify-center items-start gap-2">
         <div className="w-full flex justify-between items-start">
-          <span className="font-semibold text-neutral-100">{title}</span>
-          <span className="text-neutral-500">{formattedDate(date)}</span>
+          <h3 className="font-semibold text-neutral-100">{title}</h3>
+          <p className="text-neutral-500">{formattedDate(date)}</p>
         </div>
-        <div className="text-clip text-neutral-400">{description}</div>
+        <p className="text-clip text-neutral-400">{description}</p>
       </div>
     </Link>
   );

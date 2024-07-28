@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useRef } from "react";
 import clsx from "clsx";
 
 export default function Navbar() {
@@ -29,8 +28,6 @@ export default function Navbar() {
       url: "/connect",
     },
   ];
-
-  const hoverSoundEffectRef = useRef<HTMLAudioElement>(null);
 
   return (
     <>
